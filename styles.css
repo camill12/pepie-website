@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00008B	;
+    background-image: url('image.png');/* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) to change the transparency */
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    color: greenyellow;
+  }
+  .ct {
+    text-align: center;
+  }
+
+  .tiny5 {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.head {
+    color: greenyellow;
+    font-size: 48px;
+}
+
+.camp {
+    width: 300px;
+    height: 300px;
+}
+
+.camp-d {
+    display: flex;
+    justify-content: center;
+}
+.desc {
+    color: greenyellow;
+    font-size: 24px;
+}
+.desc-dd {
+    display: flex;
+    justify-content: center;
+}
+.desc-d {
+    width: 500px
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #copy-feedback {
+    animation: pulse 0.5s;
+  }
+  .copyable-text {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+.htb {
+    font-size: 48px;
+}
+
+.htb-sub {
+    font-size: 30px;
+}
+
+.htb-sec {
+    width: 400px;
+    padding: 10px;
+}
+.t-text {
+    font-size: 25px;
+}
+.htb-div {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.linkz-con {
+  display: flex;
+  justify-content: center;
+}
+.linkz {
+  background: rgba(0, 0, 255, 0.62);
+  border-radius: 10px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+
+.countdown {
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+}

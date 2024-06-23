@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Pepe - $PEPIE on Solana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="countdown">
+            <p>
+                🇺🇸 4th July Countdown <span id="countdown" class="ct"></span> 🇺🇸
+            </p>
+        </div>
+        <div>
+            <h1 class="head ct">AMERICAN PEPE</h1>
+            <p class="ct">LP BURNT 100% & CONTRACT RENOUNCED</p>
+        </div>
+        <div class="camp-d">
+            <img class="camp" src="cam.PNG" alt="Cam coin" />
+        </div>
+        <div class="ca ct">
+            <p>$SOL: 
+<span class="copyable-text" onclick="copyToClipboard()">
+                CkcZm1DmujJGSffrAVrCP7NbniMmtYJ7ZendnJnpump
+            </span>
+            </p>
+            <div id="copy-feedback"></div>
+
+        </div>
+        <div class="ca ct">
+            <p>$TON: 
+<span class="copyable-text" onclick="copyToClipboard()">
+    EQDFdvw9kpatA6jpLDMowkLoG8kWLAI19EyARnerPxAS_w_7
+            </span>
+            </p>
+            <div id="copy-feedback"></div>
+
+        </div>
+        
+
+        <div class="linkz-con">
+            <div class="linkz">
+                <p>
+                    <a>
+                        TWITTER
+                    </a>
+                </p>
+                <p>
+                    <a>
+                        TELEGRAM
+                    </a>
+                </p>
+                <p>
+                    <a>
+                        DEXTOOLS
+                    </a>
+                </p>
+                <p>
+                    <a>
+                        DEXSCREENER
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="desc-dd">
+            <div class="desc-d">
+                <p class="desc tiny5 ct">
+                    The most patriotic version of Pepe! American Pepe!
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h1 class="htb">HOW TO BUY ON $SOL</h1>
+            <div  class="htb-div">
+                <div class="htb-sec">
+                    <h1>CREATE WALLET</h1>
+                    <p>
+                        Get Phantom or your preferred wallet for free from Google Play or the app store. For desktop
+                        users, visit Phantom to get the Google Chrome extension.
+                    </p>
+                </div>
+
+                <div class="htb-sec">
+                    <h1>GET SOLANA</h1>
+                    <p>
+                        Keep SOL in your wallet in order to convert to $PEPIE. You can purchase directly on Phantom, transfer funds from another wallet, or purchase on another exchange and send the funds to your wallet if you don't have any SOL.
+                    </p>
+                </div>
+
+                <div class="htb-sec">
+                    <h1>OPEN JUPITER</h1>
+                    <p>Connect to Jupiter. Navigate to Jupiter using the Phantom app's browser or Chrome. Link your pocketbook. In Jupiter, paste the $PEPIE token address, choose $PEPIE, and click "Confirm." Please sign when Phantom asks for a wallet signature.
+
+                    </p>
+                </div>
+            </div>
+
+            <h1 class="htb">HOW TO BUY ON $TON</h1>
+            <div  class="htb-div">
+                <div class="htb-sec">
+                    <h1>CREATE WALLET</h1>
+                    <p>
+                        Get TonKeeper or your preferred wallet for free from Google Play or the app store. For desktop
+                        users, visit TonKeeper to get the Google Chrome extension.
+                    </p>
+                </div>
+
+                <div class="htb-sec">
+                    <h1>GET SOLANA</h1>
+                    <p>
+                        Keep TON in your wallet in order to convert to $PEPIE. You can purchase directly on TonKeeper, transfer funds from another wallet, or purchase on another exchange and send the funds to your wallet if you don't have any TON.
+                    </p>
+                </div>
+
+                <div class="htb-sec">
+                    <h1>OPEN JUPITER</h1>
+                    <p>Connect to StonFi. Navigate to StonFi using the TonKeeper app's browser or Chrome. Link your pocketbook. In StonFi, paste the $PEPIE token address, choose $PEPIE, and click "Confirm." Please sign when TonKeeper asks for a wallet signature.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+        function copyToClipboard() {
+  var textToCopy = document.querySelector(".copyable-text").innerText;
+  navigator.clipboard.writeText(textToCopy)
+    .then(() => {
+      var feedback = document.getElementById("copy-feedback");
+      feedback.textContent = "Text copied to clipboard!";
+      feedback.style.display = "block";
+      setTimeout(() => {
+        feedback.style.display = "none";
+      }, 1000);
+    })
+    .catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+}
+
+const countdown = () => {
+        const countDate = new Date('July 4, 2024 00:00:00').getTime();
+        const now = new Date().getTime();
+        const gap = countDate - now;
+
+        const second = 1000;
+        const minute = second * 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+
+        const textDay = Math.floor(gap / day);
+        const textHour = Math.floor((gap % day) / hour);
+        const textMinute = Math.floor((gap % hour) / minute);
+        const textSecond = Math.floor((gap % minute) / second);
+
+        document.getElementById('countdown').innerText = `${textDay}d ${textHour}h ${textMinute}m ${textSecond}s`;
+
+        if (gap < 0) {
+            clearInterval(x);
+            document.getElementById('countdown').innerText = "Happy 4th of July!";
+        }
+    };
+
+    const x = setInterval(countdown, 1000);
+
+    </script>
+</body>
+
+</html>
