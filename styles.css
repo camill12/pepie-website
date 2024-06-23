@@ -123,3 +123,13 @@ body {
   text-align: center;
   margin: 0;
 }
+
+.linkz a {
+  color: greenyellow;
+  text-decoration: none;
+}
+
+.linkz a:hover {
+  color: orange;
+  text-decoration: underline;
+}
